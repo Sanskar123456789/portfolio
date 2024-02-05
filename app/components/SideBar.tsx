@@ -6,7 +6,7 @@ interface Props {}
 
 const SideBar: NextPage<Props> = ({}) => {
   const optionCss: string =
-    "p-5 mt-5 flex font-light text-xl hover:cursor-pointer hover:bg-orange-100 text-center w-full rounded transition";
+    "p-5 mt-5 flex justify-center font-light text-xl hover:cursor-pointer hover:bg-orange-100 text-center w-full rounded transition";
   return (
     <div className="p-2 mt-5 text-center max-h-screen overflow-auto">
       <div className="pic flex justify-center w-full">
@@ -19,7 +19,7 @@ const SideBar: NextPage<Props> = ({}) => {
           unoptimized
         ></Image>
       </div>
-      <p className="hidden text-3xl sm:block text-orange-500">
+      <p className="hidden text-3xl lg:block text-orange-500">
         Sanskar Agarwal
       </p>
       <div className="options mt-[10vh]">
@@ -40,7 +40,7 @@ const SideBar: NextPage<Props> = ({}) => {
               />
             </svg>
           </i>
-          <p className="hidden sm:block ml-5">Introduction</p>
+          <p className="hidden lg:block ml-5">Introduction</p>
         </Link>
         <Link href={"/Skills"} className={`skills ${optionCss}`}>
           <i>
@@ -64,7 +64,7 @@ const SideBar: NextPage<Props> = ({}) => {
               />
             </svg>
           </i>
-          <p className="hidden sm:block ml-5">Skills</p>
+          <p className="hidden lg:block ml-5">Skills</p>
         </Link>
         <Link href={"/About"} className={`about ${optionCss}`}>
           <i>
@@ -83,7 +83,7 @@ const SideBar: NextPage<Props> = ({}) => {
               />
             </svg>
           </i>
-          <p className="hidden sm:block ml-5">About</p>
+          <p className="hidden lg:block ml-5">About</p>
         </Link>
         <Link href={"/Projects"} className={`contact ${optionCss}`}>
           <i>
@@ -102,7 +102,7 @@ const SideBar: NextPage<Props> = ({}) => {
               />
             </svg>
           </i>
-          <p className="hidden sm:block ml-5">Projects</p>
+          <p className="hidden lg:block ml-5">Projects</p>
         </Link>
         <Link href={"/Contact"} className={`contact ${optionCss}`}>
           <i>
@@ -121,7 +121,7 @@ const SideBar: NextPage<Props> = ({}) => {
               />
             </svg>
           </i>
-          <p className="hidden sm:block ml-5">Contact</p>
+          <p className="hidden lg:block ml-5">Contact</p>
         </Link>
       </div>
     </div>

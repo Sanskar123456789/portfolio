@@ -1,13 +1,17 @@
 "use client";
 import { NextPage } from "next";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {}
 
 const Page: NextPage<Props> = ({}) => {
-  const [isOpen, setIsOpen] = useState(false);
-  setTimeout(() => setIsOpen(true), 2000);
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    setFadeIn(true);
+  }, []);
+
   return (
     <div className="relative h-screen overflow-auto">
       <div className="intro mt-[20vh] w-full pl-10">
@@ -49,7 +53,7 @@ const Page: NextPage<Props> = ({}) => {
       </div>
       <div></div>
       <div
-        className={`footer bg-orange-500 absolute bottom-0 hidden md:min-h-12 lg:min-h-20 w-full rounded-t-full md:flex justify-evenly text-base transition-all duration-500 ease-in`}
+        className={`footer bg-orange-500 absolute bottom-0 hidden md:min-h-12 lg:min-h-20 w-full rounded-t-full md:flex justify-evenly text-base transition duration-500 ease-in ${fadeIn ? '' : ' opacity-70'}`}
       >
         <p className="m-auto text-center text-white font-light">
           Experience <br /> <span className=" text-sm">2 Year</span>

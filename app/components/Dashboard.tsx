@@ -9,11 +9,11 @@ const Dashboard: NextPage<Props> = ({ children }) => {
   return (
     <div className="grid grid-cols-12 gap-4">
       {/* Side Bar */}
-      <div className="col-span-3 md:col-span-3 transition transition-delay-300 border-r border-gray-400 min-h-screen">
+      <div className="col-span-3 xl:col-span-2 transition transition-delay-300 border-r border-gray-400 min-h-screen">
         <SideBar />
       </div>
       {/* Main Content */}
-      <div className="col-span-9 md:col-span-9">{children}</div>
+      <div className="col-span-9 xl:col-span-10">{children}</div>
     </div>
   );
 };
