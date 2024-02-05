@@ -8,26 +8,32 @@ const Skills = [
   {
     skill: "Angular",
     image: "/image/angular.jpg",
+    docUrl: "https://angular.dev/",
   },
   {
     skill: "React",
     image: "/image/react.jpg",
+    docUrl: "https://react.dev/",
   },
   {
     skill: "Next",
     image: "/image/next.jpg",
+    docUrl: "https://nextjs.org/docs",
   },
   {
     skill: "Node",
     image: "/image/node.jpg",
+    docUrl: "https://nodejs.org/docs/latest/api/",
   },
   {
     skill: "Express",
     image: "/image/express.jpg",
+    docUrl: "https://expressjs.com/",
   },
   {
     skill: "MongoDb",
     image: "/image/mongodb.jpg",
+    docUrl: "https://www.mongodb.com/docs/",
   },
 ];
 
@@ -38,7 +44,7 @@ const Page: NextPage<Props> = ({}) => {
         {Skills.map((skill: any, index: number) => {
           return (
             <div key={index}>
-              <Card image={skill.image} />
+              <Card docUrl={skill.docUrl} image={skill.image} />
             </div>
           );
         })}

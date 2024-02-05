@@ -59,10 +59,10 @@ const Page: NextPage<Props> = ({}) => {
       </p>
       <div className="w-full flex justify-end">
         <Link
-          href="/Accomplishments"
+          href="/Projects"
           className="bg-orange-500 text-white p-2 rounded-md mt-10 flex w-40 justify-evenly"
         >
-          Accomplishments
+          Projects
           <i>
             <svg
               xmlns="http://www.w3.org/2000/svg"

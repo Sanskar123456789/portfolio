@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import Card from "../components/Card";
+import ProjectCard from "../components/ProjectCard";
 
 interface Props {}
 
@@ -8,7 +8,6 @@ const Projects = [
   {
     name: "RetroTax",
     image: "/image/retrotax.jpg",
-    link: "https://webscreen-qa.retrotax-aci.com/",
     efforts: [
       "Worked on migration of an Webscreen application",
       "Developed an extension of RetroTax named Plugin in Angular.",
@@ -17,7 +16,6 @@ const Projects = [
   {
     name: "PDX",
     image: "/image/PDX.jpg",
-    link: "https://staging.startdate.co/",
     efforts: [
       "Spearheaded improvements in PDX project by fixing bugs and enhancing overall functionality ",
     ],
@@ -25,14 +23,20 @@ const Projects = [
   {
     name: "StartDate",
     image: "/image/startdate.png",
-    link: "https://stg-playground.startdate.co/",
-    efforts: ["Developed the project with UI team"],
+    efforts: [
+      "Developed the project with UI team",
+      "Builded the Api's",
+      "Integrated frontend functionalities with backend systems, ensuring seamless communication and data flow",
+    ],
   },
   {
     name: "PoweredBy",
     image: "/image/poweredBy.svg",
-    link: "https://dev.pdx-qa.premieredigital.net/",
-    efforts: ["Developed the project with UI team"],
+    efforts: [
+      "Developed the project with UI team",
+      "Builded the Api's",
+      "Integrated frontend functionalities with backend systems, ensuring seamless communication and data flow",
+    ],
   },
 ];
 
@@ -43,20 +47,11 @@ const Page: NextPage<Props> = ({}) => {
         {Projects.map((Project: any, index: number) => {
           return (
             <div key={index}>
-              <Card image={Project.image} />
-              <Link href={Project.link} className="text-xl text-orange-500">
-                {Project.name}
-              </Link>
-              {Project.efforts.map((effort: string, index: number) => {
-                return (
-                  <>
-                    <br />
-                    <span key={index} className="text-base">
-                      {effort}
-                    </span>
-                  </>
-                );
-              })}
+              <ProjectCard
+                efforts={Project.efforts}
+                name={Project.name}
+                image={Project.image}
+              />
             </div>
           );
         })}
