@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Developer Portfolio - Diego Téllez
 
-## Getting Started
+This is my 2023 portfolio. Here you can download my resume and check out all the relevant information about the projects I've done and the technologies I work with.
 
-First, run the development server:
+## Design
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Scremshot](https://imgur.com/oYVnpcK.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Screamshot](https://imgur.com/Th9089F.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+**Do you want me to design a portfolio like this for you? Do not hesitate to contact me.**
+[Go to my portfolio](https://github.com/oscar91511/portfolio "portfolio"). 
 
-To learn more about Next.js, take a look at the following resources:
+## Sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- #### Home
+- #### About
+- #### Projects
+- #### Technologies
+- #### Contact
+  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technologies
 
-## Deploy on Vercel
+- #### React JS
+- #### Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Libraries
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- #### react-router-dom
+- #### sweetalert2
+- #### axios
+- #### react-icons
+- #### react-scroll
+- #### tsparticles
+
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
