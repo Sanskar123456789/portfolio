@@ -5,10 +5,10 @@ export function ModalInfo({ SelectedProject, closeModal }) {
 
   return (
     <section className="fixed inset-0 flex items-center justify-center bg-opacity-70 bg-black z-40 over">
-      <div className="relative bg-white/20 p-2 rounded-lg w-[70%] sm:w-[60%] max-w-[800px] modalCard max-h-[80vh] flex flex-col overflow-y-auto lg:text-lg lg:w-[90%]">
+      <div className="relative bg-white/20 rounded-lg w-[70%] sm:w-[60%] max-w-[800px] modalCard max-h-[80vh] flex flex-col overflow-y-auto lg:text-lg lg:w-[90%]">
         <div>
           <img
-            className="w-full rounded-tl-lg rounded-tr-lg md:object-cover"
+            className="w-full rounded-tl-lg rounded-tr-lg md:object-cover bg-white p-4 max-h-72"
             src={SelectedProject.src}
             alt="Resident image"
           />
